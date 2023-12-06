@@ -16,11 +16,6 @@ const pause = document.querySelector('.pause')
 
 var el = document.getElementById("music");
 function playAudio() { 
-  var inputData = document.getElementById("inputData").value;
-  if (inputData.trim() === "") {
-    alert("Tolong Isi Nama Lengkap Anda Terlebih Dahulu!");
-  } else {
-    $('#exampleModal').modal('hide');
     el.play();
   }
   pause.classList.remove('d-none');
