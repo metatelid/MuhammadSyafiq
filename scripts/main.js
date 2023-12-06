@@ -16,11 +16,15 @@ const pause = document.querySelector('.pause')
 
 var el = document.getElementById("music");
 function playAudio() { 
-    el.play();
-  }
+  el.play();
   pause.classList.remove('d-none');
   play.classList.add('d-none');
 } 
+function pauseAudio() { 
+  el.pause();
+  pause.classList.add('d-none');
+  play.classList.remove('d-none');
+}
 
 // Smooth scroll for links with hashes
 $("a.smooth-scroll").click(function(event) {
